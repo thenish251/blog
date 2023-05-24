@@ -4,9 +4,7 @@ header {
   box-shadow: 0 2px 4px rgba(186, 179, 179, 0.452);
   position: relative;
   z-index: 44;
-  position: fixed;
-  top: 0;
-  width: 100%
+ 
 }
 
 /* nav */
