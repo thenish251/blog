@@ -1,0 +1,136 @@
+header {
+  /* background: #fff; */
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(186, 179, 179, 0.452);
+  position: relative;
+  z-index: 44;
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* nav */
+nav ul {
+  display: flex;
+}
+nav a {
+  text-transform: capitalize;
+  margin-right: 30px;
+  color: #a59e9e;
+}
+/* User */
+.profile {
+  margin-left: 30px;
+  cursor: pointer;
+}
+.profile .image {
+  display: flex;
+  padding-bottom: 20px;
+}
+.profile .image img {
+  margin-right: 20px;
+}
+.profile button {
+  font-size: 17px;
+  font-weight: 500;
+}
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.openProfile {
+  color: #e2d2d2;
+  box-shadow: 0 2px 4px rgba(157, 151, 151, 0.51);
+  position: absolute;
+  top: 80px;
+  right: 10px;
+  width: 250px;
+  /* background: #fff; */
+}
+.openProfile .box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px;
+  transition: 0.5s;
+}
+.openProfile .icon {
+  font-size: 20px;
+  margin-right: 20px;
+}
+.openProfile h4 {
+  font-size: 15px;
+  font-weight: 500;
+}
+.openProfile button:hover {
+  background: rgba(239, 236, 243, 0.627);
+}
+header.active {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 0 4px 0 rgba(138, 141, 143, 0.289);
+  z-index: 9999;
+  background: #fff;
+}
+
+
+
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  nav a {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .profile {
+    margin-left: 0;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile .image {
+    padding-bottom: 10px;
+  }
+
+  .profile .image img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .openProfile {
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .openProfile .box {
+    margin-top: 5px;
+    padding: 2px;
+  }
+
+  .openProfile .icon {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .openProfile h4 {
+    font-size: 14px;
+  }
+}
